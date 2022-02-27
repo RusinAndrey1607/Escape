@@ -1,0 +1,43 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    &__inner {
+        padding: 20px 20px 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    &__link {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: all .5s;
+        position: relative;
+        padding-bottom: 20px;
+        &::after {
+            transition: all .5s;
+            content: " ";
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background: $orange;
+            display: block;
+        }
+        &:hover {
+            color: $orange;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

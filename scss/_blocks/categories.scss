@@ -1,0 +1,21 @@
+.categories {
+    &__list {
+        padding: 22px 45px;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        font-family: "Lora", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+        transition: all 0.5s;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

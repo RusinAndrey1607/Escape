@@ -1,0 +1,42 @@
+.top {
+    padding: 190px 0 160px;
+    text-align: center;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    &__title {
+        font-family: "Lora", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 51px;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 32px;
+        font-family: "Oxygen", sans-serif;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.63);
+    }
+    &__btn {
+        display: inline-block;
+        color: #fff;
+        font-size: 13px;
+        padding: 12px 30px;
+        border: 1px solid $orange;
+        border-radius: 3px;
+        background: $orange;
+        transition: all .5s;
+        &:hover {
+            background: transparent;
+            color: $orange;
+        }
+    }
+}
